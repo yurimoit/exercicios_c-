@@ -41,7 +41,7 @@ int main()
 {
     setlocale(LC_ALL, "Portuguese");
 
-    double base_10_elevado_19 = pow(10, 19);
+    double base_10_elevado_19 = pow(10, -19);
     double base_10_elevado_9 = pow(10, 9);
 
     const double carga = 1.6 * base_10_elevado_19;

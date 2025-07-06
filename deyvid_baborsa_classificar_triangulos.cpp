@@ -1,25 +1,14 @@
 #include <iostream>
-#include <locale>
 
 int main()
 {
 
-    std::cout << "Exercicico de classificacao de Triangulos" << std::endl;
+    int A, B, C;
 
-    int A;
-    int B;
-    int C;
+    std::cout << "Digite os valores referentes aos lados do triangulo (A, B e C): ";
+    std::cin >> A >> B >> C;
 
-    std::cout << "Digite lado A: ";
-    std::cin >> A;
-
-    std::cout << "Digite lado B: ";
-    std::cin >> B;
-
-    std::cout << "Digite lado C :";
-    std::cin >> C;
-
-    if (A + B > C || A + C > B || B + C > A)
+    if ((A + B > C) && (A + C > B) && (B + C > A))
     {
         if (A == B && B == C)
         {
